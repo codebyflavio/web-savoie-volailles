@@ -1,0 +1,12 @@
+<template name="panelCM">
+    {{#each products}}
+        <div class="col-xs-12 col-sm-6 col-md-6 mainCol">
+            <img src="../{{image}}"/>
+            <input type="text" name="productName" class="form-control" value="{{name}}">
+            <textarea name='productDescription' class="form-control colP" rows="10"
+                      style="color: black" value='{{description}}'></textarea>
+            <button type="submit" class="btn btn-lg btn-success form-control editProductsCol">Edit</button>
+            <button type="submit" class="btn btn-lg btn-danger form-control deleteProductsCol">Delete</button>
+        </div>
+    {{/each}}
+</template>

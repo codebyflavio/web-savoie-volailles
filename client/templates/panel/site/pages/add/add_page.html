@@ -1,0 +1,31 @@
+<template name="addPage">
+    <div class="row">
+        <div>
+            <form>
+                <div class="row">
+                    <div class="radio-inline">
+                        <label>
+                            <input type="radio" name="addPageRadio" id="radioMagasin" value="magasin">
+                            Magasin
+                        </label>
+                    </div>
+                    <div class="radio-inline">
+                        <label>
+                            <input type="radio" name="addPageRadio" id="radioProduit" value="produit">
+                            Produit
+                        </label>
+                    </div>
+                    <div class="radio-inline">
+                        <label>
+                            <input type="radio" name="addPageRadio" id="radioPromo" value="promo">
+                            Promos
+                        </label>
+                    </div>
+                </div>
+            </form>
+            {{> addPageProduits}}
+            {{> addPageMagasins}}
+            {{> addPagePromos}}
+        </div>
+    </div>
+</template>

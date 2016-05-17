@@ -1,0 +1,19 @@
+<template name="panelLayout">
+    <body>
+    {{> sAlert}}
+    <div class="panelContainer">
+        <div>
+            {{>navPanel}}
+        </div>
+        <div class="leftNav col-sm-2 col-md-2 col-lg-2">
+            {{>leftNav}}
+        </div>
+        <div class="col-sm-8 col-md-8 col-lg-8">
+            {{> Template.dynamic template=panelMain}}
+        </div>
+        <div class="rightNav col-sm-2 col-md-2 col-lg-2">
+            {{>rightNav}}
+        </div>
+    </div>
+    </body>
+</template>

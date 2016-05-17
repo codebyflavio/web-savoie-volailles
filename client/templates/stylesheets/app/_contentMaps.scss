@@ -1,0 +1,29 @@
+.map {
+  min-height: 400px;
+  height: 100%;
+  float: right;
+}
+.address {
+  color: $text;
+  margin-bottom: 15px;
+}
+.inputMap {
+  width: 80%;
+  float: left;
+}
+.btnMap {
+  width: 20%;
+  float: left;
+  border-left: 30px solid;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-color: $baseColor;
+}
+.directions {
+  margin-bottom: 20px;
+}
+.angular-google-map-container {
+  height: 400px;
+  width: 400px;
+  float:right;
+}

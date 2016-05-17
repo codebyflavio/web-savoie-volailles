@@ -1,0 +1,48 @@
+<template name="navBar">
+    <div class="logoMain">
+        <a rel="home" title="Savoie Volailles"><img src="img/logo.png" alt="logo"></a>
+    </div>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand logo" rel="home" title="Savoie
+            Volailles"><img
+                        src="img/logo.png" alt="logo"></a>
+
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                           aria-haspopup="true" aria-expanded="false">Magasins</a>
+                        <ul class="dropdown-menu">
+                            {{#each stores}}
+                            <li><a href="#">{{name}}</a></li>
+                            {{/each}}
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                           aria-haspopup="true" aria-expanded="false">Produits</a>
+                        <ul class="dropdown-menu">
+                            {{#each products}}
+                            <li><a href="#">{{name}}</a></li>
+                            {{/each}}
+                        </ul>
+                    </li>
+                    <li><a href="#">Promotions</a></li>
+                    <li><a href="#">Nous Contacter</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</template>

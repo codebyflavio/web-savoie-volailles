@@ -1,0 +1,167 @@
+//COLOR
+$baseColor: #574fff;
+$secondColor: #f38630;
+$text: #5862ff;
+$textH: #FA6900;
+
+//FONTS
+$font_0: Roboto;
+$font_1: Helvetica;
+$font_2: Arial;
+$font_3: serif;
+
+//STYLES
+a {
+  color: $text;
+  text-decoration: none;
+}
+ul li {
+  list-style-type: none;
+}
+p {
+  font-size: 20px;
+  margin-top: 5px;
+  margin-bottom: 40px;
+  color: $text;
+}
+h1 {
+  font-weight: 400;
+  width: 100%;
+}
+h2 {
+  font-weight: 400;
+  width: 100%;
+  font-size: 42px;
+  color: $textH;
+  margin: 40px 0 0;
+}
+h3 {
+  font-weight: 400;
+  font-size: 24px;
+  margin: 40px 0 0;
+  color: $textH;
+}
+h4 {
+  font-weight: 200;
+  font-size: 24px;
+  margin: 10px 0 0;
+}
+h5 {
+  font-weight: 300;
+  font-size: 20px;
+  margin: 10px 0 40px;
+}
+img {
+  width: 100%;
+}
+//
+.contactInfo > a {
+  color: $text;
+  font-size: 2em;
+  float: left;
+  clear: both;
+  text-decoration: none;
+  text-align: left;
+  &:hover {
+    font-size: 2.2em;
+    font-weight: bold;
+  }
+}
+.h1Magasin {
+  margin-bottom: 30px;
+  font-size: 7em;
+  color: $textH;
+  font-weight: 100;
+}
+.magasinP {
+  text-align: left;
+  color: $text;
+}
+
+//@extend-elements
+//original selectors
+//.logoMain, .logoMain > a > img
+%extend_1 {
+  width: 30%;
+  float: left;
+  margin-left: 3px;
+}
+//original selectors
+//.footerItems > a, .footerItems > p
+%extend_2 {
+  color: $baseColor;
+  font-size: initial;
+  font-weight: 200;
+  margin-top: 20px;
+}
+* {
+  //Instead of the line below you could use @include box-sizing($bs)
+  box-sizing: border-box;
+  &:before {
+    //Instead of the line below you could use @include box-sizing($bs)
+    box-sizing: border-box;
+  }
+  &:after {
+    //Instead of the line below you could use @include box-sizing($bs)
+    box-sizing: border-box;
+  }
+}
+.wrapper{
+  font-size: 1em;
+  font-weight: 200;
+  font-family: $font_0, $font_1, $font_2, $font_3;
+  width: 100%;
+  text-align: center;
+  padding-top: 50px;
+  min-height: 700px;
+  background: $baseColor;
+}
+//QUERIES
+@media screen and(min-width: 768px) {
+  .navbar-fixed-top {
+    width: 80%;
+    margin: auto;
+    padding-top: 10px;
+    float: right;
+  }
+  .logo {
+    display: none;
+  }
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+  }
+}
+@media screen and(max-width: 767px) {
+  .logoMain {
+    display: none;
+    > img {
+      display: none;
+    }
+  }
+  .logo,
+  .logo > img {
+    width: 65px;
+    margin: -9px 15px 5px 25px;
+  }
+  .row {
+    width: 100%;
+  }
+  .mainRow {
+    width: 95%;
+  }
+  .mainCol {
+    width: 80%;
+    margin-left: 10%;
+    min-height: 400px;
+  }
+  footer {
+    height: 125px;
+  }
+  .navbar .navbar-nav {
+    width: 80%;
+  }
+  .navbar-fixed-top {
+    width: 100%;
+  }
+}

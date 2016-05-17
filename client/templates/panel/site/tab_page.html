@@ -1,0 +1,31 @@
+<template name="tabPage">
+    <div class="container">
+        <ul id="tabPage" class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#all" id="allPages" role="tab" data-toggle="tab"
+                                                      aria-expanded="true">All</a></li>
+
+            <li role="presentation"><a href="#addpage" role="tab" data-toggle="tab"
+                                       aria-expanded="true">Add</a></li>
+
+            <li role="presentation"><a href="#editpage" role="tab" data-toggle="tab"
+                                       aria-expanded="true">Produits</a></li>
+
+            <li role="presentation"><a href="#page2" id="pages1" role="tab" data-toggle="tab"
+                                       aria-expanded="true">Magasins</a></li>
+
+            <li role="presentation"><a href="#">Promos</a></li>
+        </ul>
+    </div>
+        <div id="tabPageContent" class="tab-content">
+        <div role="tabpanel" class="tab-pane fade" id="addpage">
+            {{> addPage}}
+        </div>
+
+        <div role="tabpanel" class="tab-pane fade" id="editpage">
+            {{> panelCM}}
+        </div>
+        <div role="tabpanel" class="tab-pane fade" id="page2" aria-labelledby="pages2">
+
+        </div>
+    </div>
+</template>

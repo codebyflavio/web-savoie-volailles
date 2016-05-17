@@ -1,0 +1,11 @@
+<template name="contentMain">
+    <div class="container-fluid mainRow">
+        {{#each products}}
+        <div style="background-color: {{backgroundColor}}" class="col-xs-12 col-sm-6 col-md-4 mainCol">
+            <img src="{{image}}"/>
+            <p style="color: {{textColor}}" class="colP">{{description}}</p>
+            <a style='color: {{textColor}}; border-color: {{btnBorder}}' href="#" class="siteButtonMain">{{name}}</a>
+        </div>
+        {{/each}}
+    </div>
+</template>

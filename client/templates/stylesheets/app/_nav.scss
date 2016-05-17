@@ -1,0 +1,67 @@
+.nav a {
+  transition: .35s linear;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 60px;
+  color: $secondColor;
+  text-align: right;
+  &:last-child {
+    padding-right: 35px;
+  }
+}
+.dropdown-menu {
+  background-color: $baseColor;
+  > li > a {
+    text-align: left;
+    color: $secondColor;
+    &:hover {
+      color: $baseColor;
+      background-color: $secondColor;
+    }
+  }
+}
+.navbar-fixed-top {
+  padding-top: 10px;
+  float: right;
+  text-align: center;
+}
+.navbar {
+  .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+  }
+  .navbar-collapse .navItems {
+    text-align: center;
+  }
+}
+.navbar-default {
+  border-color: $baseColor;
+  .navbar-toggle {
+    background-color: $secondColor;
+    border-color: $baseColor;
+
+    .icon-bar {
+      background-color: $baseColor;
+    }
+  }
+  .navbar-nav>.open>a {
+    color: $secondColor;
+    background: $secondColor none;
+  }
+}
+.navbar-default .navbar-nav>li>a {
+  color: $baseColor;
+  &:hover{
+    background-color: $baseColor;
+    color: $secondColor;
+  }
+}
+.logoMain {
+  position: fixed;
+  text-align: left;
+  @extend %extend_1;
+  > a > img {
+    @extend %extend_1;
+  }
+}

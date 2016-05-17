@@ -1,0 +1,46 @@
+<template name="addPageProduits">
+    <div class="row addPageProduits">
+        <div class="col-md-8">
+            <form>
+                <div class="row">
+                    <div class="form-group">
+                        <label for="produitsTitle">Nome</label>
+                        <input type="text" class="form-control" id="produitsTitle" placeholder="Inserir Nome">
+                    </div>
+                    <div class="form-group">
+                        <label for="produitsDescription">Descricao</label>
+                        <textarea class="form-control" id="produitsDescription" rows="3" placeholder="Inserir Descricao"></textarea>
+                    </div>
+                    <div class="row form-group">
+                        <div class="form-group col-md-4">
+                            <label for="produitsColorBackground">Background Color</label>
+                            <input type="color" class="form-control" id="produitsColorBackground">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="produitsColorText">Text Color</label>
+                            <input type="color" class="form-control" id="produitsColorText">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="produitsColorBtnBorder">Button Border</label>
+                            <input type="color" class="form-control" id="produitsColorBtnBorder">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="produitsInsertImg">Imagem</label>
+                        <input id="produitsInsertImg" class="form-control" type="file">
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary btn-group-lg createProduit">Criar</button>
+                        <button class="btn btn-danger btn-group-lg">Cancel</button>
+                    </div>
+                    {{> uploadBootstrap}}
+                </div>
+            </form>
+        </div>
+        <div class="col-md-4 mainCol" id="panelPreviewProduit">
+                <img src=""/>
+                <p class="colP descriptionPreview">Description</p>
+                <a href="#" class="siteButtonMain titlePreview">Title</a>
+        </div>
+    </div>
+</template>
