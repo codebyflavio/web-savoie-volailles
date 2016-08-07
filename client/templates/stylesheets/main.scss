@@ -5,3 +5,7 @@
 @import 'app/contentMain';
 @import 'app/contentMaps';
 @import "panel/panel";
+
+.logoWebsite, .logoWebsite > img {
+  width: 30px !important;
+}

@@ -34,7 +34,7 @@ if (Products.find().count() === 0) {
     Products.insert({
         name: 'Fruits',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus diam dolor, posuere non convallis in, ultrices et est.',
-        image: 'img/peche.jpg',
+        image: 'http://placehold.it/350x350',
         backgroundColor: '#f38630',
         textColor: '#574fff',
         btnBorder: '#840303'
@@ -43,7 +43,7 @@ if (Products.find().count() === 0) {
     Products.insert({
         name: 'Legumes',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus diam dolor, posuere non convallis in, ultrices et est.',
-        image: 'img/tomate.jpg',
+        image: 'http://placehold.it/350x350',
         backgroundColor: '#f38630',
         textColor: '#574fff',
         btnBorder: '#840303'
@@ -52,7 +52,7 @@ if (Products.find().count() === 0) {
     Products.insert({
         name: 'Boucherie',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus diam dolor, posuere non convallis in, ultrices et est.',
-        image: 'img/volailles.jpg',
+        image: 'http://placehold.it/350x350',
         backgroundColor: '#f38630',
         textColor: '#574fff',
        btnBorder: '#840303'
@@ -61,7 +61,7 @@ if (Products.find().count() === 0) {
     Products.insert({
         name: 'Fromage',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus diam dolor, posuere non convallis in, ultrices et est.',
-        image: 'img/fromage.jpg',
+        image: 'http://placehold.it/350x350',
         backgroundColor: '#f38630',
         textColor: '#574fff',
         btnBorder: '#840303'
@@ -70,7 +70,7 @@ if (Products.find().count() === 0) {
     Products.insert({
         name: 'Charcuterie',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus diam dolor, posuere non convallis in, ultrices et est.',
-        image: 'img/charcuterie.jpg',
+        image: 'http://placehold.it/350x350',
         backgroundColor: '#f38630',
         textColor: '#574fff',
         btnBorder: '#840303'
@@ -79,7 +79,7 @@ if (Products.find().count() === 0) {
     Products.insert({
         name: 'Vins',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus diam dolor, posuere non convallis in, ultrices et est.',
-        image: 'img/vin.jpg',
+        image: 'http://placehold.it/350x350',
         backgroundColor: '#f38630',
         textColor: '#574fff',
         btnBorder: '#840303'
