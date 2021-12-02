@@ -1,0 +1,88 @@
+<link rel="stylesheet" href="./stylesheets/main.css">
+
+<div name="websiteLayout">
+    <div>
+        <template name="navBar">
+            <div class="logoMain">
+                <a rel="home" class="logoWebsite" title="Savoie Volailles"><img src="http://placehold.it/30x30" alt="logo"></a>
+            </div>
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand logo logoWebsite" rel="home" title="Savoie
+            Volailles"><img
+                                src="http://placehold.it/30x30" alt="logo"></a>
+
+                        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+
+                    <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                   aria-haspopup="true" aria-expanded="false">Magasins</a>
+                                <ul class="dropdown-menu">
+                                    {{#each stores}}
+                                        <li><a href="#">{{name}}</a></li>
+                                    {{/each}}
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                   aria-haspopup="true" aria-expanded="false">Produits</a>
+                                <ul class="dropdown-menu">
+                                    {{#each products}}
+                                        <li><a href="#">{{name}}</a></li>
+                                    {{/each}}
+                                </ul>
+                            </li>
+                            <li><a href="#">Promotions</a></li>
+                            <li><a href="#">Nous Contacter</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </template>
+
+    </div>
+    <div>
+        <div name="contentMain">
+            <div class="container-fluid mainRow">
+                <div style="background-color: {{backgroundColor}}" class="col-xs-12 col-sm-6 col-md-4 mainCol">
+                    <img src="http://placehold.it/350x350"/>
+                    <p style="color: {{textColor}}" class="colP">Foo</p>
+                    <a style='color: {{textColor}}; border-color: {{btnBorder}}' href="#" class="siteButtonMain">Bar</a>
+                </div>
+
+                <div style="background-color: {{backgroundColor}}" class="col-xs-12 col-sm-6 col-md-4 mainCol">
+                    <img src="http://placehold.it/350x350"/>
+                    <p style="color: {{textColor}}" class="colP">Foo</p>
+                    <a style='color: {{textColor}}; border-color: {{btnBorder}}' href="#" class="siteButtonMain">Bar</a>
+                </div>
+
+                <div style="background-color: {{backgroundColor}}" class="col-xs-12 col-sm-6 col-md-4 mainCol">
+                    <img src="http://placehold.it/350x350"/>
+                    <p style="color: {{textColor}}" class="colP">Foo</p>
+                    <a style='color: {{textColor}}; border-color: {{btnBorder}}' href="#" class="siteButtonMain">Bar</a>
+                </div>
+
+                <div style="background-color: {{backgroundColor}}" class="col-xs-12 col-sm-6 col-md-4 mainCol">
+                    <img src="http://placehold.it/350x350"/>
+                    <p style="color: {{textColor}}" class="colP">Foo</p>
+                    <a style='color: {{textColor}}; border-color: {{btnBorder}}' href="#" class="siteButtonMain">Bar</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div>
+        {{> footer}}
+    </div>
+</div>
